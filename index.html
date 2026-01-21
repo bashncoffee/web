@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Kolasa - Dashboard CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="lang-en">
+
+    <nav class="toolbar no-print">
+        <div class="toolbar-content">
+            <div class="brand">DK<span>.cv</span></div>
+            <div class="controls">
+                <button onclick="toggleLanguage()" class="btn-icon" id="lang-btn">PL</button>
+                <button onclick="toggleTheme()" class="btn-icon" id="theme-icon">🌙</button>
+                <button onclick="generatePDF()" class="btn-primary">
+                    <span>📥</span> <span class="btn-text">Export PDF</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="app-container">
+        <div class="dashboard">
+            <aside class="sidebar">
+                <header class="identity">
+                    <div class="avatar">DK</div>
+                    <h1>Daniel Kolasa</h1>
+                    <p class="subtitle" data-en="Treasury Analyst & Automation Specialist" data-pl="Analityk Treasury i Specjalista ds. Automatyzacji"></p>
+                </header>
+
+                <div class="contact-info">
+                    <div class="c-item">📍 Poznań, Poland</div>
+                    <div class="c-item">📞 +48 725 064 909</div>
+                    <div class="c-item">✉️ daniel.kolasa@icloud.com</div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 data-en="Development" data-pl="Programowanie"></h3>
+                    <div class="tags">
+                        <span>Python</span><span>Pandas</span><span>NumPy</span><span>Watchdog</span><span>PyTorch</span><span>SQL</span><span>VBA</span><span>Bash</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 data-en="Infrastructure" data-pl="Infrastruktura"></h3>
+                    <div class="tags">
+                        <span>Ubuntu Server</span><span>Manjaro</span><span>Docker</span><span>Git</span><span>NiFi</span><span>Spark</span><span>Metabase</span><span>Figma</span><span>Azure Basics</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 data-en="FinTech & BI" data-pl="FinTech i BI"></h3>
+                    <div class="tags">
+                        <span class="highlight">ISO 20022</span><span class="highlight">Asset Recovery</span><span>CAMT.053</span><span>PAIN.002</span><span>MT940/942</span><span>Power BI</span><span>Power Automate</span><span>FIS Trax</span><span>Quantum</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 data-en="Languages" data-pl="Języki"></h3>
+                    <div class="lang-bar"><span>English</span><strong>B2</strong></div>
+                    <div class="lang-bar"><span>Ukrainian</span><strong>B1</strong></div>
+                    <div class="lang-bar"><span>German</span><strong>A2</strong></div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 data-en="Education" data-pl="Edukacja"></h3>
+                    <div class="edu-item">
+                        <span class="year">2023 - 2027</span>
+                        <p><strong data-en="B.Eng. Applied Computer Science" data-pl="Inż. Informatyka Stosowana"></strong><br>WSIiZ Rzeszów (In Progress)</p>
+                    </div>
+                    <div class="edu-item">
+                        <span class="year">2014</span>
+                        <p><strong data-en="Surveying Technician" data-pl="Technik Geodeta"></strong><br>ZSDGiL Jarosław</p>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                <header class="top-status">
+                    <div class="badge" data-en="SYSTEM STATUS: AVAILABLE" data-pl="STATUS: DOSTĘPNY"></div>
+                    <div class="notice">
+                        <strong data-en="Current Status:" data-pl="Aktualny status:"></strong> 
+                        <span data-en="Traveling outside EU. Email preferred." data-pl="Urlop poza UE. Preferowany e-mail."></span>
+                    </div>
+                </header>
+
+                <section class="card">
+                    <h2 data-en="Professional Profile" data-pl="Profil Zawodowy"></h2>
+                    <p data-en="Treasury Analyst with a strong focus on data engineering and automation. Expert in recovering dormant assets and unassigned funds ($100k+). Specialized in migrating global banking structures to ISO 20022 standards and optimizing financial infrastructure." 
+                       data-pl="Analityk Treasury z silnym ukierunkowaniem na inżynierię danych i automatyzację. Ekspert w odzyskiwaniu aktywów z martwych kont ($100k+). Specjalista ds. migracji struktur bankowych do standardu ISO 20022 oraz optymalizacji infrastruktury finansowej."></p>
+                </section>
+
+                <section class="card">
+                    <h2 data-en="Experience" data-pl="Doświadczenie"></h2>
+                    
+                    <div class="timeline-item">
+                        <div class="time">03.2022 – Present</div>
+                        <div class="job-info">
+                            <h3 data-en="Treasury Analyst / Automation Specialist" data-pl="Analityk Treasury / Specjalista ds. Automatyzacji"></h3>
+                            <p class="company">ADM (Archer Daniels Midland) • Poznań</p>
+                            <ul data-en-list="Asset Recovery: Recovered hundreds of thousands of USD by auditing dormant accounts and unassigned funds.;M&A Integration: Technical lead for consolidating newly acquired subsidiary data into the Citibank global platform.;Automation: Built server-side infrastructure for automated EMEA cash reporting (Python/NiFi/Power BI).;Compliance: Managed CAMT.053 transition and conducted SIT/UAT for FIS Trax/Quantum ISO 20022 upgrades.;Fee Optimization: Reduced bank costs by 15% through strategic account rationalization."
+                                data-pl-list="Odzyskiwanie Aktywów: Odzyskanie kilkuset tysięcy USD poprzez audyt nieaktywnych kont i niewypłaconych środków.;Integracja M&A: Lider techniczny konsolidacji bankowej przejmowanych spółek do globalnej platformy Citibank.;Automatyzacja: Budowa infrastruktury serwerowej pod automatyczne raportowanie cashflow EMEA (Python/NiFi/Power BI).;Zgodność: Nadzór nad przejściem na CAMT.053 oraz testy SIT/UAT systemów Trax/Quantum pod ISO 20022.;Optymalizacja: Redukcja kosztów bankowych o 15% poprzez racjonalizację struktury kont.">
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="time">09.2021 – 03.2022</div>
+                        <div class="job-info">
+                            <h3 data-en="Junior Treasury Analyst" data-pl="Młodszy Analityk Treasury"></h3>
+                            <p class="company">ADM • Poznań</p>
+                            <ul data-en-list="Audit: Conducted subsidiary account reviews and reconciliation across multiple ERP systems.;Automation: Developed initial Python ETL scripts for daily liquidity snapshots."
+                                data-pl-list="Audyt: Przegląd kont spółek zależnych i rekoncyliacja danych między systemami ERP.;Automatyzacja: Tworzenie pierwszych skryptów ETL w Pythonie do codziennych raportów płynności."></ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="time">2018 – 2021</div>
+                        <div class="job-info">
+                            <h3 data-en="E-commerce Business Owner" data-pl="Właściciel Biznesu E-commerce"></h3>
+                            <p class="company">Self-Employed • Remote</p>
+                            <ul data-en-list="System Dev: Built and managed an online store using HTML/CSS.;Automation: Automated logistics and inventory tracking workflows."
+                                data-pl-list="Rozwój Systemu: Budowa i zarządzanie sklepem internetowym (HTML/CSS).;Automatyzacja: Automatyzacja procesów logistycznych i zarządzania zapasami."></ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="time">Before 2018</div>
+                        <div class="job-info">
+                            <h3 data-en="Early Career" data-pl="Wczesna Kariera"></h3>
+                            <p class="company">Germany / Poland</p>
+                            <ul data-en-list="Logistics: Operational support in Germany.;Surveying: Assistant Surveyor in Poland."
+                                data-pl-list="Logistyka: Wsparcie operacyjne w Niemczech.;Geodezja: Pomocnik geodety w Polsce."></ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2 data-en="Technical Projects" data-pl="Projekty Techniczne"></h2>
+                    <div class="project-grid">
+                        <div class="p-item">
+                            <strong data-en="Enterprise Data Warehouse Prototype" data-pl="Prototyp EDW"></strong>
+                            <p data-en="Financial data pipelines using Ubuntu Server, Spark, NiFi, SFTP orchestration, and Metabase visualization." data-pl="Pipeline'y danych finansowych oparte na Ubuntu Server, Spark, NiFi, SFTP i wizualizacji w Metabase."></p>
+                        </div>
+                        <div class="p-item">
+                            <strong data-en="Network Protocol Automation" data-pl="Automatyzacja Protokołów"></strong>
+                            <p data-en="Analysis of client-server traffic and protocol reverse engineering using Python and AI logic." data-pl="Analiza ruchu klient-serwer i reverse engineering protokołów przy użyciu Python i AI."></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2 data-en="Volunteering & Development" data-pl="Wolontariat i Rozwój"></h2>
+                    <div class="vol-item">
+                        <strong data-en="Sports Club President" data-pl="Prezes Klubu Sportowego"></strong>
+                        <p data-en="Managing administrative, legal, and financial documentation for a non-profit association." data-pl="Zarządzanie dokumentacją administracyjną, prawną i finansową stowarzyszenia (pro bono)."></p>
+                    </div>
+                    <div class="vol-item">
+                        <strong data-en="Humanitarian Aid Coordinator (2022)" data-pl="Koordynator Pomocy Humanitarnej (2022)"></strong>
+                        <p data-en="Border translator (EN/UA) and housing coordinator for refugees." data-pl="Tłumacz na granicy (EN/UA) i koordynator zakwaterowania dla uchodźców."></p>
+                    </div>
+                </section>
+
+                <footer class="rodo">
+                    <p data-en="Development Plans: Specializing in AI Engineering (PyTorch) and advanced CI/CD pipelines." data-pl="Plany Rozwoju: Specjalizacja w AI Engineering (PyTorch) i zaawansowanych potokach CI/CD."></p>
+                    <span data-en="Professional references from ADM direct management available upon request." data-pl="Referencje od managera ADM dostępne na życzenie."></span><br>
+                    <span data-en="I hereby give consent for my personal data to be processed for recruitment purposes." data-pl="Wyrażam zgodę na przetwarzanie danych osobowych dla potrzeb rekrutacji."></span>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
